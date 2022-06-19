@@ -1,0 +1,13 @@
+.item{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: #fff;
+    margin: 10px;
+}
+.grid-container{
+    display: flex;
+    justify-content: center;
+}
+
+
