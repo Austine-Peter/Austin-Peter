@@ -1,0 +1,120 @@
+Skip to content Product Team Enterprise Explore Marketplace Pricing Search Sign in Sign up Mellycal / css-grid-and-flexbox Public Code Issues Pull requests Actions Projects Wiki Security Insights css-grid-and-flexbox/style.css @Mellycal Mellycal first commit Latest commit 39370f8 4 days ago History 1 contributor 104 lines (99 sloc) 2.01 KB * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    margin: 0px;
+    height: 100%;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 584px;
+    margin: auto;
+}
+
+.container .icon-sedans {
+    margin-top: 50px;
+    margin-bottom: 14px;
+}
+
+.container .icon-suvs {
+    margin-top: 50px;
+    margin-bottom: 14px;
+}
+
+.container .icon-luxury {
+    margin-top: 50px;
+    margin-bottom: 14px;
+
+}
+
+.container h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    margin-bottom: 25px;
+
+}
+
+.container p {
+    color: hsl(0, 0%, 95%);
+    font-size: 12px;
+    font-family: "Lexend Deca";
+    font-weight: 55px;
+    margin-bottom: 20px;
+
+}
+
+.container .sedan button {
+    color: hsl(31, 77%, 52%);
+    font-size: 0.8rem;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid transparent;
+    padding: 8px;
+    width: 130px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 34px;
+}
+
+.container .suv button {
+    color: hsl(184, 100%, 22%);
+    font-size: 0.8rem;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid transparent;
+    padding: 8px;
+    width: 130px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 34px;
+}
+
+.container .luxury button {
+    color: hsl(179, 100%, 13%);
+    font-size: 0.8rem;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid transparent;
+    padding: 8px;
+    width: 130px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 34px;
+}
+
+.container div {
+    border: 1px;
+    padding: 10px;
+}
+
+.container .sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container .suv {
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.container .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+

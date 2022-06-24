@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function calc() {
+        var n1 = parseFloat(document.getElementById("n1").value);
+        var n2 = parseFloat(document.getElementById("n2").value);
+        var opr = document.getElementById("opr").value;
+        if (opr == "+") {
+          document.getElementById("result").value = n1 + n2;
+        } else if (opr == "-") {
+          document.getElementById("result").value = n1 - n2;
+        } else if (opr == "*") {
+          document.getElementById("result").value = n1 * n2;
+        } else if (opr == "/") {
+          document.getElementById("result").value = n1 / n2;
+        } else if (opr == "%") {
+          document.getElementById("result").value = n1 % n2;
+        }
+      }
+    </script>
+    <title>Simple Javascript Calculator</title>
+  </head>
+  <body>
+    <center>
+      <h1>Simple Calculator</h1>
+      <table>
+        <tr>
+          <td>Number 1:</td>
+          <td>
+            <input type="text" id="n1" maxlength="5" />
+          </td>
+        </tr>
+        <tr>
+          <td>Operation:</td>
+
+          <td><input type="text" id="opr" maxlength="1" /></td>
+        </tr>
+        <tr>
+          <td>Number 2:</td>
+          <td><input type="text" id="n2" maxlength="5" /></td>
+        </tr>
+      </table>
+      <button onclick="calc()">calculate</button>
+      <table>
+        <tr>
+          <td>Result:</td>
+          <td><input type="text" id="result" maxlength="10" /></td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
