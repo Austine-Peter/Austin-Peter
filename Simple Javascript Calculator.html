@@ -2,52 +2,25 @@
 <html lang="en">
   <head>
     <script>
-      function calc() {
-        var n1 = parseFloat(document.getElementById("n1").value);
-        var n2 = parseFloat(document.getElementById("n2").value);
-        var opr = document.getElementById("opr").value;
-        if (opr == "+") {
-          document.getElementById("result").value = n1 + n2;
-        } else if (opr == "-") {
-          document.getElementById("result").value = n1 - n2;
-        } else if (opr == "*") {
-          document.getElementById("result").value = n1 * n2;
-        } else if (opr == "/") {
-          document.getElementById("result").value = n1 / n2;
-        } else if (opr == "%") {
-          document.getElementById("result").value = n1 % n2;
-        }
+      const num1 = parseFloat(prompt("Enter nr1: ")); //10>> "10"
+      const num2 = parseFloat(prompt("Enter nr: ")); //abc, "", null NaN
+      // read operator
+      const operator = prompt("Enter Operator(+,-,/,*)");
+      let result = 0;
+      if (isNaN(num1) || isNaN(num2)) {
+        alert("wrong input Refresh The page again and provide data");
+      } else if (operator == "+") {
+        result = num1 + num2;
+      } else if (operator == "-") {
+        result = num1 - num2;
+      } else if (operator == "*") {
+        result = num1 * num2;
+      } else if (operator == "/") {
+        result = num1 / num2;
       }
+      document.write(num1 + operator + num2 + " = " + result);
     </script>
     <title>Simple Javascript Calculator</title>
   </head>
-  <body>
-    <center>
-      <h1>Simple Calculator</h1>
-      <table>
-        <tr>
-          <td>Number 1:</td>
-          <td>
-            <input type="text" id="n1" maxlength="5" />
-          </td>
-        </tr>
-        <tr>
-          <td>Operation:</td>
-
-          <td><input type="text" id="opr" maxlength="1" /></td>
-        </tr>
-        <tr>
-          <td>Number 2:</td>
-          <td><input type="text" id="n2" maxlength="5" /></td>
-        </tr>
-      </table>
-      <button onclick="calc()">calculate</button>
-      <table>
-        <tr>
-          <td>Result:</td>
-          <td><input type="text" id="result" maxlength="10" /></td>
-        </tr>
-      </table>
-    </center>
-  </body>
+  <body></body>
 </html>
