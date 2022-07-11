@@ -1,6 +1,6 @@
-Peter Augustine
+<H2>Peter Augustine</H2>
 <br>
-Student Id: I4G001418R2R
+<H2>Student Id: I4G001418R2R</H2>
 
 Please Note That The Error's Came From My End. I sumitted the link to the page Code Never knew it was supposed 
 to be the hosted Github Page. It Was Mainly because i was not familiar with Gitgub Nevertheless here are the correct links below
